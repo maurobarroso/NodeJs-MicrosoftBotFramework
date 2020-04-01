@@ -1,0 +1,34 @@
+{
+  "urls": [],
+  "qnaList": [
+    {
+      "id": 0,
+      "answer": "* Fiebre\r\n    * Tos\r\n    * Dificultad para respirar",
+      "source": "custom editorial",
+      "questions": [
+        "Cuales son los sintomas del coronavirus?"
+      ],
+      "metadata": []
+    },
+    {
+      "id": 0,
+      "answer": "A mego lo crearon los creadores de los creadores de la palabra creador.",
+      "source": "custom editorial",
+      "questions": [
+        "Como se creó Mego?"
+      ],
+      "metadata": []
+    },
+    {
+      "id": 0,
+      "answer": "Mego puede atender tus consultas que corresponden al ambito laboral.",
+      "source": "custom editorial",
+      "questions": [
+        "Que puede hacer Mego?"
+      ],
+      "metadata": []
+    }
+  ],
+  "files": [],
+  "name": "qna"
+}

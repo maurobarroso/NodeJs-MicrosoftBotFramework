@@ -9,21 +9,17 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const botbuilder_1 = require("botbuilder");
-const restify = require("restify");
-const bot_1 = require("./bot");
-const server = restify.createServer();
-server.listen(process.env.port || process.env.PORT || 3978, () => {
-    console.log(`${server.name} listening on ${server.url}`);
-});
-const adapter = new botbuilder_1.BotFrameworkAdapter({
-    appId: process.env.MICROSOFT_APPID,
-    appPassword: process.env.MICROSOFT_APP_PASSWORD
-});
-const echo = new bot_1.EchoBot;
-server.post("/api/messages", (req, res) => {
-    adapter.processActivity(req, res, (context) => __awaiter(void 0, void 0, void 0, function* () {
-        yield echo.onTurn(context);
-    }));
-});
-//# sourceMappingURL=app.js.map
+class EchoBot {
+    onTurn(context) {
+        return __awaiter(this, void 0, void 0, function* () {
+            if (context.activity.type === "message") {
+                yield context.sendActivity(`Estoy diciendo ${context.activity.text}`);
+            }
+            else {
+                yield context.sendActivity(`${context.activity.type} event detected`);
+            }
+        });
+    }
+}
+exports.EchoBot = EchoBot;
+//# sourceMappingURL=bot.js.map

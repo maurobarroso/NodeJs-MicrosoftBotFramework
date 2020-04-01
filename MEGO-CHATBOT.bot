@@ -1,5 +1,5 @@
 {
-    "name": "MEGO-CHATBOT",
+    "name": "MEGO-CHAT",
     "description": "",
     "services": [
         {
@@ -7,12 +7,12 @@
             "appId": "",
             "appPassword": "",
             "endpoint": "http://localhost:3978/api/messages",
-            "id": "31124010-72b8-11ea-a184-e7c0559d5dba",
+            "id": "af326260-72c5-11ea-b84e-f56cc7fdc32f",
             "name": "http://localhost:3978/api/messages"
         }
     ],
     "padlock": "",
     "version": "2.0",
     "overrides": null,
-    "path": "C:\\Users\\Mauro\\Desktop\\Develop\\bot-microsoft\\MEGO-CHATBOT.bot"
+    "path": "C:\\Users\\Mauro\\Desktop\\Develop\\Proyectos\\NodeJs-MicrosoftBotFramework-master\\MEGO-CHATBOT.bot"
 }
