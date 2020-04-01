@@ -7,3 +7,6 @@ Es necesario instalar estas dependencias vía npm
 - typescript
 - restify (Requiere python instalado y seteado en las variables de entorno)
 - @types/restify
+
+
+01/04/2020 - Sumamos QnaMaker y ludown como dependencias globales
